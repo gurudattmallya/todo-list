@@ -1,0 +1,105 @@
+body {
+    height: 87vh;
+    background-image: url("/icons/bg.jpeg");
+    background-size: cover;
+    padding-top: 45px;
+    margin-left: 564px;
+}
+
+.container {
+    height: 75.5vh;
+    width: 55vh;
+    background-color: white;
+    margin: 18px;
+    justify-content: center;
+    padding-top: 1px;
+}
+
+h1 {
+    padding-left: 165px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+}
+
+.collection {
+    height: 60vh;
+    margin-left: 40px;
+    width: 46vh;
+    border: 2px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.box {
+    display: flex;
+}
+
+input {
+    margin: 50px 0 0 20px;
+    height: 40px;
+    width: 65%;
+    border-top-left-radius: 20px;
+    border: none;
+    background-color: #dedede;
+    padding-left: 20px;
+}
+
+button {
+    margin: 50px 0 0 0;
+    height: 42px;
+    width: 70px;
+    border-bottom-right-radius: 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 16px 10px 12px 40px;
+    margin-right: 35px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 2px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("tick.png");
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #edeef0;
+    border-radius: 50%;
+}
